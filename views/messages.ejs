@@ -1,0 +1,22 @@
+<%- include('partials/header') -%>
+
+
+
+<div class="message">
+  <h1><%=message%></h1>
+</div>
+
+<% if (status=== 1) { %>
+<div class="center">
+  <a class="btn btn-light btn-lg" href="/register" role="button">Register</a>
+</div>
+
+<% } else { %>
+  <div class="center">
+    <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a>
+  </div>
+
+<% } %>
+
+
+<%- include('partials/footer') -%>
